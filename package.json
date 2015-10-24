@@ -22,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/tbragaf/ng2-seed/issues"
   },
-  "homepage": "https://github.com/tbragaf/ng2-seed#readme"
+  "homepage": "https://github.com/tbragaf/ng2-seed#readme",
+  "devDependencies": {
+    "angular2": "^2.0.0-alpha.44",
+    "typescript": "^1.6.2"
+  }
 }
