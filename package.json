@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tbragaf/ng2-seed.git"
+    "url": "ssh://git@github.com/tbragaf/ng2-seed.git"
   },
   "keywords": [
     "Angular2",
