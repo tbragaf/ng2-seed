@@ -1,8 +1,4 @@
-// import {bind, bootstrap} from 'angular2/angular2';
-// import {ROUTER_BINDINGS, ROUTER_PRIMARY_COMPONENT} from 'angular2/router';
-// import {App} from './components/app/app';
-// 
-// bootstrap(App, [
-//   ROUTER_BINDINGS,
-//   bind(ROUTER_PRIMARY_COMPONENT).toValue(AppCmp)
-// ]);
+import {bootstrap, provide} from 'angular2/angular2';
+import {App} from './app/app';
+
+bootstrap(App, []);
