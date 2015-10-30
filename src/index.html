@@ -8,16 +8,21 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
+  <script src="https://code.angularjs.org/tools/system.js"></script>
+  <script src="https://code.angularjs.org/2.0.0-alpha.45/angular2.min.js"></script>
 
 </head>
 <body>
   <app>Loading...</app>
 
   <script>
-    System.import('./bootstrap.js').catch(function (e) {
-      console.error(e);
+    System.config({
+      transpiler: "traceur",
+      map: {
+        "traceur-runtime": "https://code.angularjs.org/tools/traceur-runtime.js"
+      }
     });
+    System.import('./bootstrap.js').catch(function (e) { console.error(e); });
   </script>
 </body>
 </html>
