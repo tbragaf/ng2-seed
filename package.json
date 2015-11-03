@@ -1,33 +1,25 @@
 {
   "name": "ng2-seed",
-  "version": "1.0.0",
-  "description": "Angular2 Seed",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tbragaf/ng2-seed.git"
   },
-  "keywords": [
-    "Angular2",
-    "ES6"
-  ],
+  "scripts": {
+    "tsc": "tsc -p src -w",
+    "start": "live-server --open=src"
+  },
+  "engines": {
+    "npm": ">=2.14.x"
+  },
   "author": "tbragaf",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/tbragaf/ng2-seed/issues"
-  },
-  "homepage": "https://github.com/tbragaf/ng2-seed#readme",
-  "devDependencies": {
-    "typescript": "^1.6.2",
-    "gulp": "^3.9.0"
-  },
   "dependencies": {
-    "angular2": "^2.0.0-alpha.44",
-    "http-server": "^0.8.5"
+    "angular2": "2.0.0-alpha.45",
+    "systemjs": "0.19.5"
+  },
+  "devDependencies": {
+    "live-server": "^0.8.1",
+    "typescript": "^1.6.2"
   }
 }

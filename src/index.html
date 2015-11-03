@@ -1,28 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Angular 2 Seed</title>
-  <base href="<%= APP_BASE %>">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <script src="https://code.angularjs.org/tools/system.js"></script>
-  <script src="https://code.angularjs.org/2.0.0-alpha.45/angular2.min.js"></script>
-
-</head>
-<body>
-  <app>Loading...</app>
-
+  <link rel="stylesheet" href="styles.css">
+  <script src="../../node_modules/systemjs/dist/system.src.js"></script>
+  <script src="../../node_modules/angular2/bundles/angular2.dev.js"></script>
+  <script src="../../node_modules/angular2/bundles/router.dev.js"></script>
   <script>
     System.config({
-      transpiler: "traceur",
-      map: {
-        "traceur-runtime": "https://code.angularjs.org/tools/traceur-runtime.js"
-      }
+      packages: {'app': {defaultExtension: 'js'}}
     });
-    System.import('./bootstrap.js').catch(function (e) { console.error(e); });
+    System.import('app/bootstrap');
   </script>
+</head>
+<body>
+  <my-app>Loading...</my-app>
 </body>
+
 </html>

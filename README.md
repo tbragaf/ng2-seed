@@ -1,2 +1,1 @@
-# ng2-seed
-Angular2 Seed
+#NG2 Seed
