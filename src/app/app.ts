@@ -7,7 +7,6 @@ import {Child} from './child';
   selector: 'app',
   template: `
     <a [router-link]="['./Home']">Home</a>
-    <a [router-link]="['./Characters']">Characters</a>
     <button (click)="navigate()">Child</button>
     <router-outlet></router-outlet>
     `,
