@@ -1,13 +1,12 @@
 import {Component} from 'angular2/angular2';
 import {RouteConfig, ROUTER_DIRECTIVES, Router} from 'angular2/router';
-import {CharactersComponent} from './characters.component';
-import {DashboardComponent} from './dashboard.component';
+import {Home} from './home';
 import {Child} from './child';
 
 @Component({
   selector: 'app',
   template: `
-    <a [router-link]="['./Dashboard']">Dashboard</a>
+    <a [router-link]="['./Home']">Home</a>
     <a [router-link]="['./Characters']">Characters</a>
     <button (click)="navigate()">Child</button>
     <router-outlet></router-outlet>
@@ -15,8 +14,7 @@ import {Child} from './child';
   directives: [ROUTER_DIRECTIVES]
 })
 @RouteConfig([
-  { path: '/', as: 'Dashboard', component: DashboardComponent },
-  { path: '/characters', as: 'Characters', component: CharactersComponent },
+  { path: '/', as: 'Home', component: Home },
   { path: '/child/...', as: 'Child', component: Child }
 ])
 export class App { 
