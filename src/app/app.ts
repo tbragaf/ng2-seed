@@ -5,7 +5,7 @@ import {DashboardComponent} from './dashboard.component';
 import {Child} from './child';
 
 @Component({
-  selector: 'my-app',
+  selector: 'app',
   template: `
     <a [router-link]="['./Dashboard']">Dashboard</a>
     <a [router-link]="['./Characters']">Characters</a>
@@ -19,7 +19,7 @@ import {Child} from './child';
   { path: '/characters', as: 'Characters', component: CharactersComponent },
   { path: '/child/...', as: 'Child', component: Child }
 ])
-export class AppComponent { 
+export class App { 
   router : Router;
   
   constructor(router: Router) {
