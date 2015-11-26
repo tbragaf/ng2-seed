@@ -1,29 +1,11 @@
-import {Component} from 'angular2/angular2';
-import {RouteConfig, ROUTER_DIRECTIVES, Router} from 'angular2/router';
-import {Home} from './home';
-import {Child} from './child';
+import { Component, View, ElementRef } from 'angular2/angular2';
 
 @Component({
-  selector: 'app',
-  template: `
-    <a [router-link]="['./Home']">Home</a>
-    <button (click)="navigate()">Child</button>
-    <router-outlet></router-outlet>
-    `,
-  directives: [ROUTER_DIRECTIVES]
+  selector: 'app'
 })
-@RouteConfig([
-  { path: '/', as: 'Home', component: Home },
-  { path: '/child/...', as: 'Child', component: Child }
-])
-export class App { 
-  router : Router;
-  
-  constructor(router: Router) {
-    this.router = router;
-  }
-  
-  navigate() {
-    this.router.navigateByUrl('child');
-  }  
+@View({
+  templateUrl: './app.html'
+})
+export class App {   
+  constructor(elementRef : ElementRef) { }  
 }
