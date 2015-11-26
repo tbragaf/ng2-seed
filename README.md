@@ -1,6 +1,8 @@
 #NG2 Seed
 
 To run:
+
 1. npm install
-2. npm run tsc
-3. npm start
+2. tsd install
+3. gulp serve
+4. gulp
