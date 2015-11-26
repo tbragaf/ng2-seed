@@ -1,6 +1,4 @@
-typings
-src/**/*.js
-src/**/*.map
 node_modules
-jspm_packages
-bower_components
+dev
+dist
+typings
