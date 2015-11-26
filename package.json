@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tbragaf/ng2-seed.git"
+    "url": "git+https://github.com/tbragaf/ng2-typescript.git"
   },
   "author": "tbragaf",
   "license": "MIT",
