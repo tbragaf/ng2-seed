@@ -6,7 +6,7 @@ Angular2 bootstrap with typescript and gulp.
 
 1. Clone this repo
 
-1. Run 'npm install'
+2. Run 'npm install'
 
 3. Run 'tsd install'
 
