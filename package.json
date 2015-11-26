@@ -1,5 +1,7 @@
 {
-  "name": "ng2-seed",
+  "name": "ng2-typescript",
+  "description": "Angular2 with Typescript",
+  "homepage": "https://github.com/tbragaf/ng2-typescript",
   "version": "0.0.1",
   "repository": {
     "type": "git",
