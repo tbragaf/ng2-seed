@@ -1,6 +1,7 @@
 #NG2 Typescript
 
-Simple Angular2 bootstrap with typescript and gulp.
+Simple Angular2 starting app with typescript and gulp.
+Works best with visual code.
 
 ##Getting Started
 
