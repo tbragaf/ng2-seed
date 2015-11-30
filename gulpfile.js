@@ -11,7 +11,7 @@ gulp.task('serve', function() {
   var server = gls.static('/', port);
   server.start();
 
-  gulp.watch(['dev/**/*.js'], function(file) {
+  gulp.watch(['dist/**/*.js'], function(file) {
     server.notify.apply(server, [file]);
   });
 });
@@ -26,11 +26,11 @@ gulp.task('build', function() {
   
   return gulp.src('src/**/*.ts')
     .pipe(ts(project))
-    .pipe(gulp.dest('dev'));
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('clean', function() {
-  return del('dev');
+  return del('dist');
 });
 
 gulp.task('default', ['copy', 'build']);
