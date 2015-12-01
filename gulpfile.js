@@ -5,7 +5,7 @@ var gulp = require('gulp');
 var ts = require('gulp-typescript');
 var gls = require('gulp-live-server');
 
-var port = 12345;
+var port = 12346;
 
 gulp.task('serve', function() {
   var server = gls.static('/', port);
