@@ -1,1 +1,7 @@
-<b>Hi folks :)</b>
+<nav>
+  <ul>
+    <li><a [router-link]="['Home']">Home</a></li>
+    <button (click)="goTo('Home')">Home</button>
+  </ul>
+</nav>
+<router-outlet></router-outlet>
